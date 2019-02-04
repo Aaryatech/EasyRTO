@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "619659402800",
+    "firebase_url": "https://easyrto-f20eb.firebaseio.com",
+    "project_id": "easyrto-f20eb",
+    "storage_bucket": "easyrto-f20eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619659402800:android:5bc8637535d026d4",
+        "android_client_info": {
+          "package_name": "com.ats.easyrto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619659402800-2vas3jsrd0p75uhop8h4q00ahmafvet5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnyEhWE0buAhjNMwjZ_lmavj3T_v_4XTI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

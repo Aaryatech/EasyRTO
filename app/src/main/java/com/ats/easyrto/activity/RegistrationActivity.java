@@ -285,7 +285,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                             Cust data = response.body();
                             if (data == null) {
                                 commonDialog.dismiss();
-                                Toast.makeText(RegistrationActivity.this, "Unable to process", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistrationActivity.this, ""+data.getResp(), Toast.LENGTH_SHORT).show();
                             } else {
 
                                 if (data.getCustId() != 0) {
@@ -297,7 +297,13 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                                     finish();
 
                                 } else {
-                                    Toast.makeText(RegistrationActivity.this, "Unable to process", Toast.LENGTH_SHORT).show();
+
+                                    if (data.getResp().equalsIgnoreCase("already exist")){
+                                        Toast.makeText(RegistrationActivity.this, "This user already exists", Toast.LENGTH_SHORT).show();
+                                    }else{
+                                        Toast.makeText(RegistrationActivity.this, "Unable to process", Toast.LENGTH_SHORT).show();
+                                    }
+
                                     commonDialog.dismiss();
 
                                 }

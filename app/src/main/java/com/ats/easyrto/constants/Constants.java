@@ -21,10 +21,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://tomcat.aaryatechindia.in:2908/rtowebapi/";
+   // public static final String BASE_URL = "http://tomcat.aaryatechindia.in:2908/rtowebapi/";
    // public static final String BASE_URL = "http://192.168.2.9:8093/";
+   public static final String BASE_URL = "http://tomcat.aaryatechindia.in:10908/rtowebapi/";
 
-    public static final String IMAGE_PATH = "http://tomcat.aaryatechindia.in:2908/rtodocupload/";
+   // public static final String IMAGE_PATH = "http://tomcat.aaryatechindia.in:2908/rtodocupload/";
+   public static final String IMAGE_PATH = "http://tomcat.aaryatechindia.in:10908/rtodocupload/";
 
 
     public static OkHttpClient client = new OkHttpClient.Builder()

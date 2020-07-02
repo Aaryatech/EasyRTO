@@ -16,6 +16,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
+
+
         if (remoteMessage.getData().size() > 0 || !remoteMessage.getNotification().equals(null)) {
 
             try {

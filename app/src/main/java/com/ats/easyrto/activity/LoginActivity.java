@@ -179,6 +179,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             if (data == null) {
                                 commonDialog.dismiss();
                                 Toast.makeText(LoginActivity.this, "Unable to login", Toast.LENGTH_SHORT).show();
+
                             } else {
 
                                 startActivity(new Intent(LoginActivity.this, HomeActivity.class));
@@ -222,4 +223,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         startActivity(intent);
         finish();
     }
+
+
 }

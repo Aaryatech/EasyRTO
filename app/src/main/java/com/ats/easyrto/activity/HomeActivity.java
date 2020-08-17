@@ -217,7 +217,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.fab) {
             if (customer == null) {
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                startActivity(new Intent(HomeActivity.this, LoginAndRegistrationActivity.class));
                 finish();
 
             } else {

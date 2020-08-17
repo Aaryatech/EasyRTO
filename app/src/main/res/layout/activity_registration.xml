@@ -161,7 +161,7 @@
                             android:layout_height="wrap_content"
                             android:drawableLeft="@drawable/ic_password"
                             android:drawablePadding="10dp"
-                            android:hint="Password"
+                            android:hint="Create Password"
                             android:inputType="textPassword"
                             android:maxLines="1"
                             android:singleLine="true" />

@@ -477,10 +477,12 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strStateId.isEmpty()) {
                     edState.setError(null);
                     edStateId.setError("required");
-                } else if (strSeries.isEmpty()) {
-                    edStateId.setError(null);
-                    edSeries.setError("required");
-                } else if (strNumber.isEmpty()) {
+                }
+//                else if (strSeries.isEmpty()) {
+//                    edStateId.setError(null);
+//                    edSeries.setError("required");
+//                }
+                else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
                 }
@@ -488,21 +490,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
               /*  if (vehicleNo.isEmpty()) {
                     edLicenseNo.setError("required");
                 }*/
-                /*else if (imagePath1 == null) {
-                    edLicenseNo.setError(null);
-                    //edNumber.setError(null);
-                    tvErrorPhoto1.setVisibility(View.VISIBLE);
 
-                } else if (imagePath2 == null) {
-                    tvErrorPhoto1.setVisibility(View.GONE);
-                    tvErrorPhoto2.setVisibility(View.VISIBLE);
-
-                } else if (pathAadhar == null) {
-                    tvErrorPhoto2.setVisibility(View.GONE);
-                    tvErrorAadhar.setVisibility(View.VISIBLE);
-
-                    tvErrorAadhar.requestFocus();
-                }*/
                 else if (pathRCBook == null) {
                     edNumber.setError(null);
                     edLicenseNo.setError(null);
@@ -510,23 +498,44 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                     tvErrorRCBook.setVisibility(View.VISIBLE);
 
                 }
-                /*else if (pathInsurance1 == null) {
-                    tvErrorRCBook.setVisibility(View.GONE);
-                    tvErrorInsc1.setVisibility(View.VISIBLE);
 
-                } else if (pathInsurance2 == null) {
-                    tvErrorInsc1.setVisibility(View.GONE);
-                    tvErrorInsc2.setVisibility(View.VISIBLE);
+                //-----------------------------------Change------------------------------
 
-                } else if (pathPUC == null) {
-                    tvErrorInsc2.setVisibility(View.GONE);
-                    tvErrorPUC.setVisibility(View.VISIBLE);
-
-                } else if (pathAddProof == null) {
-                    tvErrorPUC.setVisibility(View.GONE);
-                    tvErrorAddProof.setVisibility(View.VISIBLE);
-
-                }*/
+//                else if (imagePath1 == null) {
+//                    edLicenseNo.setError(null);
+//                    //edNumber.setError(null);
+//                    tvErrorRCBook.setVisibility(View.GONE);
+//                    tvErrorPhoto1.setVisibility(View.VISIBLE);
+//
+//                } else if (imagePath2 == null) {
+//                    tvErrorPhoto1.setVisibility(View.GONE);
+//                    tvErrorPhoto2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAadhar == null) {
+//                    tvErrorPhoto2.setVisibility(View.GONE);
+//                    tvErrorAadhar.setVisibility(View.VISIBLE);
+//
+//                    tvErrorAadhar.requestFocus();
+//                }
+//
+//                else if (pathInsurance1 == null) {
+//                    tvErrorAadhar.setVisibility(View.GONE);
+//                    tvErrorInsc1.setVisibility(View.VISIBLE);
+//
+//                } else if (pathInsurance2 == null) {
+//                    tvErrorInsc1.setVisibility(View.GONE);
+//                    tvErrorInsc2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathPUC == null) {
+//                    tvErrorInsc2.setVisibility(View.GONE);
+//                    tvErrorPUC.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAddProof == null) {
+//                    tvErrorPUC.setVisibility(View.GONE);
+//                    tvErrorAddProof.setVisibility(View.VISIBLE);
+//                    //-----------------------------------Change------------------------------
+//
+//                }
                 else {
                     edLicenseNo.setError(null);
                     edState.setError(null);
@@ -562,30 +571,15 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strStateId.isEmpty()) {
                     edState.setError(null);
                     edStateId.setError("required");
-                } else if (strSeries.isEmpty()) {
-                    edStateId.setError(null);
-                    edSeries.setError("required");
-                } else if (strNumber.isEmpty()) {
+                }
+//                else if (strSeries.isEmpty()) {
+//                    edStateId.setError(null);
+//                    edSeries.setError("required");
+//                }
+                else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
                 }
-
-
-                 /*else if (imagePath1 == null) {
-                    edNumber.setError(null);
-                    tvErrorPhoto1.setVisibility(View.VISIBLE);
-
-                } else if (imagePath2 == null) {
-                    tvErrorPhoto1.setVisibility(View.GONE);
-                    tvErrorPhoto2.setVisibility(View.VISIBLE);
-
-                } else if (pathAadhar == null) {
-                    tvErrorPhoto2.setVisibility(View.GONE);
-                    tvErrorAadhar.setVisibility(View.VISIBLE);
-
-                    tvErrorAadhar.requestFocus();
-                }
-*/
 
                 else if (pathRCBook == null) {
                     edLicenseNo.setError(null);
@@ -595,25 +589,42 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
 
                 }
 
-/*                else if (pathInsurance1 == null) {
-                    tvErrorRCBook.setVisibility(View.GONE);
-                    tvErrorInsc1.setVisibility(View.VISIBLE);
+                //-----------------------------------------Change--------------------------------
 
-                }
-                else if (pathInsurance2 == null) {
-                    tvErrorInsc1.setVisibility(View.GONE);
-                    tvErrorInsc2.setVisibility(View.VISIBLE);
-
-                } else if (pathPUC == null) {
-                    tvErrorInsc2.setVisibility(View.GONE);
-                    tvErrorPUC.setVisibility(View.VISIBLE);
-
-                } else if (pathBankNOC == null) {
-                    tvErrorPUC.setVisibility(View.GONE);
-                    tvErrorBankNOC.setVisibility(View.VISIBLE);
-
-                } */
-
+//                 else if (imagePath1 == null) {
+//                    edNumber.setError(null);
+//                    tvErrorRCBook.setVisibility(View.GONE);
+//                    tvErrorPhoto1.setVisibility(View.VISIBLE);
+//
+//                } else if (imagePath2 == null) {
+//                    tvErrorPhoto1.setVisibility(View.GONE);
+//                    tvErrorPhoto2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAadhar == null) {
+//                    tvErrorPhoto2.setVisibility(View.GONE);
+//                    tvErrorAadhar.setVisibility(View.VISIBLE);
+//
+//                    tvErrorAadhar.requestFocus();
+//                } else if (pathInsurance1 == null) {
+//                    tvErrorAadhar.setVisibility(View.GONE);
+//                    tvErrorInsc1.setVisibility(View.VISIBLE);
+//
+//                }
+//                else if (pathInsurance2 == null) {
+//                    tvErrorInsc1.setVisibility(View.GONE);
+//                    tvErrorInsc2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathPUC == null) {
+//                    tvErrorInsc2.setVisibility(View.GONE);
+//                    tvErrorPUC.setVisibility(View.VISIBLE);
+//
+//                } else if (pathBankNOC == null) {
+//                    tvErrorPUC.setVisibility(View.GONE);
+//                    tvErrorBankNOC.setVisibility(View.VISIBLE);
+//
+////-----------------------------------------Change--------------------------------
+//
+//                }
                 else {
                     edLicenseNo.setError(null);
                     edState.setError(null);
@@ -646,29 +657,15 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strStateId.isEmpty()) {
                     edState.setError(null);
                     edStateId.setError("required");
-                } else if (strSeries.isEmpty()) {
-                    edStateId.setError(null);
-                    edSeries.setError("required");
-                } else if (strNumber.isEmpty()) {
+                }
+//                else if (strSeries.isEmpty()) {
+//                    edStateId.setError(null);
+//                    edSeries.setError("required");
+//                }
+                else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
                 }
-
-                 /*else if (imagePath1 == null) {
-                    edNumber.setError(null);
-                    tvErrorPhoto1.setVisibility(View.VISIBLE);
-
-                } else if (imagePath2 == null) {
-                    tvErrorPhoto1.setVisibility(View.GONE);
-                    tvErrorPhoto2.setVisibility(View.VISIBLE);
-
-                } else if (pathAadhar == null) {
-                    tvErrorPhoto2.setVisibility(View.GONE);
-                    tvErrorAadhar.setVisibility(View.VISIBLE);
-
-                    tvErrorAadhar.requestFocus();
-                }
-                */
 
                 else if (pathRCBook == null) {
                     edLicenseNo.setError(null);
@@ -677,29 +674,46 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                     tvErrorRCBook.setVisibility(View.VISIBLE);
 
                 }
+//---------------------------------change---------------------------------
 
-/*                else if (pathInsurance1 == null) {
-                    tvErrorRCBook.setVisibility(View.GONE);
-                    tvErrorInsc1.setVisibility(View.VISIBLE);
-
-                } else if (pathInsurance2 == null) {
-                    tvErrorInsc1.setVisibility(View.GONE);
-                    tvErrorInsc2.setVisibility(View.VISIBLE);
-
-                } else if (pathPUC == null) {
-                    tvErrorInsc2.setVisibility(View.GONE);
-                    tvErrorPUC.setVisibility(View.VISIBLE);
-
-                } else if (pathBankLetter == null) {
-                    tvErrorPUC.setVisibility(View.GONE);
-                    tvErrorBankLetter.setVisibility(View.VISIBLE);
-
-                } else if (pathForm17 == null) {
-                    tvErrorBankLetter.setVisibility(View.GONE);
-                    tvErrorForm17.setVisibility(View.VISIBLE);
-
-                }*/
-
+//                 else if (imagePath1 == null) {
+//                    edNumber.setError(null);
+//                    tvErrorRCBook.setVisibility(View.GONE);
+//                    tvErrorPhoto1.setVisibility(View.VISIBLE);
+//
+//                } else if (imagePath2 == null) {
+//                    tvErrorPhoto1.setVisibility(View.GONE);
+//                    tvErrorPhoto2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAadhar == null) {
+//                    tvErrorPhoto2.setVisibility(View.GONE);
+//                    tvErrorAadhar.setVisibility(View.VISIBLE);
+//
+//                    tvErrorAadhar.requestFocus();
+//                }
+//
+//               else if (pathInsurance1 == null) {
+//                    tvErrorAadhar.setVisibility(View.GONE);
+//                    tvErrorInsc1.setVisibility(View.VISIBLE);
+//
+//                } else if (pathInsurance2 == null) {
+//                    tvErrorInsc1.setVisibility(View.GONE);
+//                    tvErrorInsc2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathPUC == null) {
+//                    tvErrorInsc2.setVisibility(View.GONE);
+//                    tvErrorPUC.setVisibility(View.VISIBLE);
+//
+//                } else if (pathBankLetter == null) {
+//                    tvErrorPUC.setVisibility(View.GONE);
+//                    tvErrorBankLetter.setVisibility(View.VISIBLE);
+//
+//                } else if (pathForm17 == null) {
+//                    tvErrorBankLetter.setVisibility(View.GONE);
+//                    tvErrorForm17.setVisibility(View.VISIBLE);
+//
+//                }
+//---------------------------------change---------------------------------
                 else {
                     edLicenseNo.setError(null);
                     edState.setError(null);
@@ -733,32 +747,15 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strStateId.isEmpty()) {
                     edState.setError(null);
                     edStateId.setError("required");
-                } else if (strSeries.isEmpty()) {
-                    edStateId.setError(null);
-                    edSeries.setError("required");
-                } else if (strNumber.isEmpty()) {
+                }
+//                else if (strSeries.isEmpty()) {
+//                    edStateId.setError(null);
+//                    edSeries.setError("required");
+//                }
+                else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
-                }
-
-
-                /*else if (imagePath1 == null) {
-                    edNumber.setError(null);
-                    tvErrorPhoto1.setVisibility(View.VISIBLE);
-
-                } else if (imagePath2 == null) {
-                    tvErrorPhoto1.setVisibility(View.GONE);
-                    tvErrorPhoto2.setVisibility(View.VISIBLE);
-
-                } else if (pathAadhar == null) {
-                    tvErrorPhoto2.setVisibility(View.GONE);
-                    tvErrorAadhar.setVisibility(View.VISIBLE);
-
-                    tvErrorAadhar.requestFocus();
-                }
-                */
-
-                else if (pathRCBook == null) {
+                } else if (pathRCBook == null) {
                     edNumber.setError(null);
                     edLicenseNo.setError(null);
                     tvErrorAadhar.setVisibility(View.GONE);
@@ -766,27 +763,41 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
 
                 }
 
-
-/*                else if (pathInsurance1 == null) {
-                    tvErrorRCBook.setVisibility(View.GONE);
-                    tvErrorInsc1.setVisibility(View.VISIBLE);
-
-                } else if (pathInsurance2 == null) {
-                    tvErrorInsc1.setVisibility(View.GONE);
-                    tvErrorInsc2.setVisibility(View.VISIBLE);
-
-                } else if (pathPUC == null) {
-                    tvErrorInsc2.setVisibility(View.GONE);
-                    tvErrorPUC.setVisibility(View.VISIBLE);
-
-                } else if (pathAddProof == null) {
-                    tvErrorPUC.setVisibility(View.GONE);
-                    tvErrorAddProof.setVisibility(View.VISIBLE);
-
-                }
-                */
-
-                else {
+//---------------------------------change---------------------------------
+//                else if (imagePath1 == null) {
+//                    edNumber.setError(null);
+//                    tvErrorRCBook.setVisibility(View.GONE);
+//                    tvErrorPhoto1.setVisibility(View.VISIBLE);
+//
+//                } else if (imagePath2 == null) {
+//                    tvErrorPhoto1.setVisibility(View.GONE);
+//                    tvErrorPhoto2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAadhar == null) {
+//                    tvErrorPhoto2.setVisibility(View.GONE);
+//                    tvErrorAadhar.setVisibility(View.VISIBLE);
+//
+//                    tvErrorAadhar.requestFocus();
+//                }
+//
+//               else if (pathInsurance1 == null) {
+//                    tvErrorAadhar.setVisibility(View.GONE);
+//                    tvErrorInsc1.setVisibility(View.VISIBLE);
+//
+//                } else if (pathInsurance2 == null) {
+//                    tvErrorInsc1.setVisibility(View.GONE);
+//                    tvErrorInsc2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathPUC == null) {
+//                    tvErrorInsc2.setVisibility(View.GONE);
+//                    tvErrorPUC.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAddProof == null) {
+//                    tvErrorPUC.setVisibility(View.GONE);
+//                    tvErrorAddProof.setVisibility(View.VISIBLE);
+////---------------------------------change---------------------------------
+//                }
+               else {
                     edLicenseNo.setError(null);
                     edState.setError(null);
                     edStateId.setError(null);
@@ -824,27 +835,32 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
-                } else if (imagePath1 == null) {
-                    edNumber.setError(null);
-                    tvErrorPhoto1.setVisibility(View.VISIBLE);
-
-                } else if (imagePath2 == null) {
-                    tvErrorPhoto1.setVisibility(View.GONE);
-                    tvErrorPhoto2.setVisibility(View.VISIBLE);
-
-                } else if (pathAadhar == null) {
-                    tvErrorPhoto2.setVisibility(View.GONE);
-                    tvErrorAadhar.setVisibility(View.VISIBLE);
-
-                }
-                */
-
+                } */
+//---------------------------------change---------------------------------
                 else if (pathOrigLicense == null) {
                     edLicenseNo.setError(null);
                     tvErrorAadhar.setVisibility(View.GONE);
                     tvErrorOrigLic.setVisibility(View.VISIBLE);
+                }
 
-                } else {
+//                else if (imagePath1 == null) {
+//                    edNumber.setError(null);
+//                    tvErrorOrigLic.setVisibility(View.GONE);
+//                    tvErrorPhoto1.setVisibility(View.VISIBLE);
+//
+//                } else if (imagePath2 == null) {
+//                    tvErrorPhoto1.setVisibility(View.GONE);
+//                    tvErrorPhoto2.setVisibility(View.VISIBLE);
+//
+//                } else if (pathAadhar == null) {
+//                    tvErrorPhoto2.setVisibility(View.GONE);
+//                    tvErrorAadhar.setVisibility(View.VISIBLE);
+//
+//                }
+
+//---------------------------------change---------------------------------
+
+                else {
                     edLicenseNo.setError(null);
                     edState.setError(null);
                     edStateId.setError(null);
@@ -872,10 +888,12 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 } else if (strStateId.isEmpty()) {
                     edState.setError(null);
                     edStateId.setError("required");
-                } else if (strSeries.isEmpty()) {
-                    edStateId.setError(null);
-                    edSeries.setError("required");
-                } else if (strNumber.isEmpty()) {
+                }
+//                else if (strSeries.isEmpty()) {
+//                    edStateId.setError(null);
+//                    edSeries.setError("required");
+//                }
+                else if (strNumber.isEmpty()) {
                     edSeries.setError(null);
                     edNumber.setError("required");
                 }
@@ -1079,7 +1097,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -1209,7 +1227,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -1352,7 +1370,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -1482,7 +1500,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -1563,7 +1581,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -1692,7 +1710,7 @@ public class AttachmentActivity extends AppCompatActivity implements View.OnClic
                 CustomSharedPreference.putInt(this, CustomSharedPreference.KEY_TYPE, 1);
                 CustomSharedPreference.putString(this, CustomSharedPreference.KEY_WORK_TYPE, workTypeStr);
 
-                Intent intent = new Intent(AttachmentActivity.this, LoginActivity.class);
+                Intent intent = new Intent(AttachmentActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(intent);
                 finish();
 

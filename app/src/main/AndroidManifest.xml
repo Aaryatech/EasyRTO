@@ -21,6 +21,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
+        <activity android:name=".activity.LoginAndRegistrationActivity"></activity>
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
@@ -28,18 +30,16 @@
         <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activity.HomeActivity"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.RegistrationActivity"
             android:screenOrientation="portrait" />
@@ -72,7 +72,7 @@
         <activity
             android:name=".BuyProduct"
             android:label="Buy Product"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PaymentSuccessActivity"
             android:screenOrientation="portrait">
@@ -137,8 +137,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
-
-
     </application>
 
 </manifest>

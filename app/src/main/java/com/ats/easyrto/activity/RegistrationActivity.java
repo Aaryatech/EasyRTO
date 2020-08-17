@@ -125,12 +125,12 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 isValidMobile = true;
             }
 
-            if (strDOB.isEmpty()) {
-                edDOB.setError("required");
-            } else {
-                edDOB.setError(null);
-                isValidDOB = true;
-            }
+//            if (strDOB.isEmpty()) {
+//                edDOB.setError("required");
+//            } else {
+//                edDOB.setError(null);
+//                isValidDOB = true;
+//            }
 
             /*if (strEmail.isEmpty()) {
                 edEmail.setError("required");
@@ -182,7 +182,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 isValidConfirmPass = true;
             }
 
-            if (isValidName && isValidMobile && isValidDOB && isValidEmail && isValidAddress && isValidPass && isValidConfirmPass) {
+            if (isValidName && isValidMobile && isValidEmail && isValidAddress && isValidPass && isValidConfirmPass) {
 
                 randomNumber = random(6);
 
@@ -426,7 +426,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     @Override
     public boolean onSupportNavigateUp() {
         // onBackPressed();
-        startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+        startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
         finish();
         return super.onSupportNavigateUp();
     }
@@ -434,8 +434,10 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+        startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
         finish();
 
     }
+
+
 }

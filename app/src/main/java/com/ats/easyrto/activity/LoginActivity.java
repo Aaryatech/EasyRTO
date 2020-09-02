@@ -163,7 +163,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     public void updateToken(int custId, String token) {
         if (Constants.isOnline(this)) {
-            final CommonDialog commonDialog = new CommonDialog(this, "Loading", "Please Wait...");
+            final CommonDialog commonDialog = new CommonDialog(getApplicationContext(), "Loading", "Please Wait...");
             commonDialog.show();
 
             Call<Info> listCall = Constants.myInterface.updateToken(custId, token);

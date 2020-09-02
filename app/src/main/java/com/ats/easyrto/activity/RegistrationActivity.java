@@ -125,12 +125,12 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 isValidMobile = true;
             }
 
-//            if (strDOB.isEmpty()) {
-//                edDOB.setError("required");
-//            } else {
-//                edDOB.setError(null);
-//                isValidDOB = true;
-//            }
+            if (strDOB.isEmpty()) {
+                edDOB.setError("required");
+            } else {
+                edDOB.setError(null);
+                isValidDOB = true;
+            }
 
             /*if (strEmail.isEmpty()) {
                 edEmail.setError("required");
@@ -182,15 +182,13 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 isValidConfirmPass = true;
             }
 
-            if (isValidName && isValidMobile && isValidEmail && isValidAddress && isValidPass && isValidConfirmPass) {
+            if (isValidName && isValidMobile && isValidEmail && isValidAddress && isValidPass && isValidConfirmPass && isValidDOB) {
 
                 randomNumber = random(6);
 
                 sendOTP(strMobile, randomNumber);
 
             }
-
-
         } else if (view.getId() == R.id.btnSubmit) {
 
             String strOTP = edOTP.getText().toString();

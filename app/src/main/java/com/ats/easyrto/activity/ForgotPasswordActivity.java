@@ -40,7 +40,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ForgotPasswordActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText edMobile, edPass, edOTP;
-    private Button btnSubmit, btnOTPSubmit;
+    private Button btnSubmit, btnOTPSubmit,btnResend;
     private LinearLayout llForm, llOTP;
 
     String strMobile, strNewPass;
@@ -61,12 +61,14 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
         edPass = findViewById(R.id.edPass);
         edOTP = findViewById(R.id.edOTP);
         btnSubmit = findViewById(R.id.btnSubmit);
+        btnResend = findViewById(R.id.btnResend);
         btnOTPSubmit = findViewById(R.id.btnOTPSubmit);
         llForm = findViewById(R.id.llForm);
         llOTP = findViewById(R.id.llOTP);
 
         btnSubmit.setOnClickListener(this);
         btnOTPSubmit.setOnClickListener(this);
+        btnResend.setOnClickListener(this);
 
         try {
 
@@ -125,6 +127,12 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
 
             }
 
+        }else if(view.getId()==R.id.btnResend)
+        {
+            randomNumber = random(6);
+            Log.e("OTP NUMBER : ",""+randomNumber);
+
+            sendOTP(strMobile, randomNumber);
         }
 
     }

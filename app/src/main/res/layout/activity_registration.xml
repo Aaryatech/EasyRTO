@@ -256,13 +256,32 @@
                             android:singleLine="true" />
                     </android.support.design.widget.TextInputLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                     <Button
                         android:id="@+id/btnSubmit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
                         android:text="Register"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
                         android:textColor="@color/colorBlack" />
+
+                        <Button
+                            android:id="@+id/btnResend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:text="Resend"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

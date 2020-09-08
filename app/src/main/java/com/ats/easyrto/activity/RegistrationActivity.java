@@ -45,7 +45,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText edName, edMobile, edDOB, edEmail, edAddress, edPassword, edConfirmPassword, edOTP, edTime;
-    private Button btnRegister, btnSubmit;
+    private Button btnRegister, btnSubmit,btnResend;
     private LinearLayout llForm, llOTP;
     private TextView tvDOB, tvLogin;
 
@@ -77,6 +77,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         edOTP = findViewById(R.id.edOTP);
         btnRegister = findViewById(R.id.btnRegister);
         btnSubmit = findViewById(R.id.btnSubmit);
+        btnResend = findViewById(R.id.btnResend);
         llForm = findViewById(R.id.llForm);
         llOTP = findViewById(R.id.llOTP);
         tvDOB = findViewById(R.id.tvDOB);
@@ -85,6 +86,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
         btnRegister.setOnClickListener(this);
         btnSubmit.setOnClickListener(this);
+        btnResend.setOnClickListener(this);
         edDOB.setOnClickListener(this);
         tvLogin.setOnClickListener(this);
         edTime.setOnClickListener(this);
@@ -189,7 +191,14 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 sendOTP(strMobile, randomNumber);
 
             }
-        } else if (view.getId() == R.id.btnSubmit) {
+        }else if(view.getId()== R.id.btnResend)
+        {
+            randomNumber = random(6);
+
+            sendOTP(strMobile, randomNumber);
+
+        }
+        else if (view.getId() == R.id.btnSubmit) {
 
             String strOTP = edOTP.getText().toString();
 
@@ -261,7 +270,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             mTimePicker.show();
 
         }
-
 
     }
 
@@ -356,6 +364,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     }
 
     public void sendOTP(String mobile, String OTPNumber) {
+        Log.e("PARAMETER","             MOBILE       "+mobile+"               OTP NUMBER        "+OTPNumber);
         if (Constants.isOnline(this)) {
 
             final CommonDialog commonDialog = new CommonDialog(this, "Loading", "Please Wait...");
